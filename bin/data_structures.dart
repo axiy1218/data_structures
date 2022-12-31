@@ -28,6 +28,33 @@ void main(List<String> arguments) {
   linked.push(7);
   linked.push(9);
   print(linked);
+
+  linked.append(12);
+  linked.append(89);
+  linked.append(77);
+  print(linked);
+
+  var nodeAtThree = linked.nodeAt(3);
+  print(nodeAtThree);
+  final node = linked.insertAfter(nodeAtThree, 100);
+  print(linked);
+
+  int? removed = linked.pop();
+
+  print(removed);
+  print(linked);
+
+  var lt = linked.removeLast();
+  print(lt);
+  print(linked);
+
+  var lt1 = linked.removeAfter(nodeAtThree);
+  print(lt1);
+  print(linked);
+
+  for (final item in linked) {
+    print(item);
+  }
 }
 
 //? Challange 2

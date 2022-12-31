@@ -1,6 +1,6 @@
 class Node<E> {
-  E? value;
-  Node<E?>? next;
+  E value;
+  Node<E>? next;
   Node({this.next, required this.value});
   @override
   String toString() {
